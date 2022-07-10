@@ -15,6 +15,7 @@ const Splash = () => {
 
   return (
     <View style={ Styles.splashStyle }>
+      
       <Text style={ Styles.first }>물레방아</Text>
       <Text style={ Styles.second }>사랑이 증거가 될때</Text>
       <Text style={ [Styles.loading, { display: showText ? 'none' : 'flex' }] }>로딩중...</Text>
