@@ -1,11 +1,13 @@
 //import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Splash from './src/screens/Splash';
+//import Splash from './src/screens/Splash';
+import KakaoLogIn from './src/components/KakaoLogIn';
 
 export default function App() {
   return (
     <View>
-        <Splash styles={StyleSheet.container}/>
+         {/*** <Splash styles={ StyleSheet.container } />*/}
+      <KakaoLogIn/>
     </View>
   );
 }

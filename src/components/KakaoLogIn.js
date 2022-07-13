@@ -4,11 +4,11 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 const KakaoLogIn = () => {
 
-   const loginWithKakao = () => {
+
     Kakao.Auth.authorize({
       redirectUri: 'https://developers.kakao.com/tool/demo/oauth'
     })
-  }
+  
   // 아래는 데모를 위한 UI 코드입니다.
   displayToken()
   
@@ -31,7 +31,6 @@ const KakaoLogIn = () => {
     if (parts.length === 2) return parts.pop().split(";").shift();
   }
 
-
   return (
     <View>
         <Text id="custom-login-btn" href="javascript:loginWithKakao()">
@@ -42,7 +41,7 @@ const KakaoLogIn = () => {
           />
         </Text>
 
-        <Text id="token-result"></Text>
+        <Text id="token-result">카카오 로그인</Text>
     </View>
     
   )
